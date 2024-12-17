@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Portfolio</title>
+   <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body>
+    <!-- ========== Start Header Section ========== -->
+
+    <header class="header" data-header>
+        <div class="responsive flex place-content-between place-items-center bg-transparent">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" />
+            </div>
+
+            <nav class="navbar" data-navbar>
+                <ul class="ulist">
+                    <li class="links ">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="links text-ored after:w-full">
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li class="links">
+                        <a href="port.html">Portfolio</a>
+                    </li>
+                    <li class="links">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="contact_btn">
+                <button class="btn1 hidden lg:block">Contact Now</button>
+                <button class="nav-toggle-btn lg:hidden" aria-label="menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" aria-hidden="true" class="text-3xl"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Header Section ========== -->
+
+    <!-- ========== Start Services ========== -->
+
+    <div class="w-full py-10 bg-[url(images/service-bg.png)] bg-cover bg-no-repeat lg:h-auto ">
+        <div class="responsive items-center justify-center flex flex-col pt-20">
+            <p class="uppercase text-5xl font-bold text-jet">My Services</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 py-16 gap-10">
+                <div class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row
+                                ">
+                    <ion-icon name="logo-html5" class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                    "></ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">html</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row bg-[#fec548]
+                                                        ">
+                    <ion-icon name="logo-css3" class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                                            "></ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">CSS</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row bg-[#fecbb4]
+                                                                                ">
+                    <ion-icon name="logo-react" class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                                                                    "></ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">React JS</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row bg-[#94b6ff]
+                                                                                                            ">
+                    <ion-icon name="logo-angular" class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                                                                                                ">
+                    </ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">Angular</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div
+                    class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row bg-[#c5d39c]
+                                                                                                                                    ">
+                    <ion-icon name="logo-apple"
+                        class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                                                                                                                        ">
+                    </ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">Ios App</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+                <div
+                    class="skillcard flex items-start gap-5 p-10 flex-col sm:flex-row md:flex-col lg:flex-row bg-[#d0ccff]
+                                                                                                                                                            ">
+                    <ion-icon name="logo-android"
+                        class="px-6 py-3 border-2 border-davgray bg-white text-6xl text-jet
+                                                                                                                                                                ">
+                    </ion-icon>
+                    <div>
+                        <p class="text-2xl font-semibold text-jet uppercase">App Dev</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== End Services ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <footer class="w-full  bg-jet py-2">
+        <div class="responsive py-5 flex flex-col sm:flex-row items-center justify-between">
+            <ul class="flex gap-5 text-lg text-whitea80">
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </li>
+            </ul>
+            <p class="text-lg text-whitea80">© 2022 copyright all right reserved</p>
+        </div>
+
+    </footer>
+
+    <!-- ========== End Footer ========== -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

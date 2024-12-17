@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Portfolio</title>
+ <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body>
+    <!-- ========== Start Header Section ========== -->
+    <header class="header bg-white" data-header>
+        <div class="responsive flex place-content-between place-items-center bg-transparent">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" />
+            </div>
+
+            <nav class="navbar" data-navbar>
+                <ul class="ulist">
+                    <li class="links ">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="links ">
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li class="links ">
+                        <a href="port.html">Portfolio</a>
+                    </li>
+                    <li class="links text-ored after:w-full">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="contact_btn">
+                <button class="btn1 hidden lg:block">Contact Now</button>
+                <button class="nav-toggle-btn lg:hidden" aria-label="menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" aria-hidden="true" class="text-3xl"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== End Header Section ========== -->
+
+    <!-- ========== Start Contact US ========== -->
+
+    <div
+        class="w-full py-10  lg:bg-[url(images/contact-bg.png)]  bg-contain bg-no-repeat bg-center bg-jet lg:h-auto ">
+        <div class="responsive items-center justify-center flex flex-col pt-20">
+            <p class="uppercase text-5xl font-bold text-white">Contact Us</p>
+            <div class="flex flex-col lg:flex-row items-center  w-full py-10  gap-10 lg:gap-20">
+                <div class="form flex flex-col gap-3 px-10 py-10 bg-white w-full">
+                    <p class="text-2xl font-bold text-jet">Get in Touch </p>
+                    <p class="text-davgray">Our friendly team would love to hear from you.</p>
+                    <div class="flex flex-col md:flex-row pt-6 gap-5 w-full">
+                        <div class="flex flex-col gap-1 w-full">
+                            <label for="First Name " class="text-davgray font-semibold">First Name</label>
+                            <input type="text" name="" class="py-2 border border-jet outline-none px-5" id=""
+                                placeholder="Name *">
+                        </div>
+                        <div class="flex flex-col gap-1 w-full">
+                            <label for="First Name " class="text-davgray font-semibold">Your Email</label>
+                            <input type="text" name="" class="py-2 border border-jet outline-none px-5" id=""
+                                placeholder="Email *">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 w-full">
+                        <label for="First Name " class="text-davgray font-semibold">Subject</label>
+                        <input type="text" name="" class="py-2 border border-jet outline-none px-5" id=""
+                            placeholder="Subject *">
+                    </div>
+                    <div class="flex flex-col gap-1 w-full">
+                        <label for="First Name " class="text-davgray font-semibold">Your Message</label>
+                        <textarea name="" id="" cols="" rows="5" placeholder="Your Message *"
+                            class="border border-jet outline-none px-5"></textarea>
+                    </div>
+                    <button
+                        class="btn1 bg-max-yr shadow-ored text-jet hover:bg-ored hover:shadow-max-yr max-w-max my-3">send
+                        message</button>
+
+                </div>
+                <div class="w-full px-0 md:px-10 py-2 items-center justify-center">
+                    <ul class="flex flex-col gap-10">
+                        <li class="inline-flex items-center gap-5">
+                            <ion-icon name="call" class="p-3  bg-[#9cd3d1] text-2xl text-jet">
+                            </ion-icon>
+                            <p class="flex flex-col text-lg text-whitea75">Phone
+                                <span class="text-lg font-bold text-whitea80">+01 123 654 8096</span>
+                            </p>
+                        </li>
+                        <li class="inline-flex items-center gap-5">
+                            <ion-icon name="mail" class="p-3  bg-[#fec548] text-2xl text-jet">
+                            </ion-icon>
+                            <p class="flex flex-col text-lg text-whitea75">Mail
+                                <span class="text-lg font-bold text-whitea80">info@domainname.com</span>
+                            </p>
+                        </li>
+                        <li class="inline-flex items-center gap-5">
+                            <ion-icon name="location" class="p-3  bg-[#fecbb4] text-2xl text-jet">
+                            </ion-icon>
+                            <p class="flex flex-col text-lg text-whitea75">VISIT MY STUDIO
+                                <span class="text-lg font-bold text-whitea80">Warnwe Park Streetperrine, FL 33157 New
+                                    York City</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========== End Contact US ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <footer class="w-full  bg-jet lg:h-[5vh]">
+        <div class="responsive  flex flex-col sm:flex-row items-center justify-between">
+            <ul class="flex gap-5 text-lg text-whitea80">
+                <li>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </li>
+            </ul>
+            <p class="text-lg text-whitea80">© 2022 copyright all right reserved</p>
+        </div>
+
+    </footer>
+
+    <!-- ========== End Footer ========== -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

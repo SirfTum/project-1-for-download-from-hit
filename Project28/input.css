@@ -1,0 +1,118 @@
+@tailwind base;
+
+#toggle:checked~label div.toggle-bot {
+    @apply translate-x-3;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --maximum-yellow-red_a10: hsla(41, 99%, 64%, 0.1);
+        --maximum-yellow-red_a40: hsla(41, 99%, 64%, 0.4);
+        --maximum-yellow-red: hsl(41, 99%, 64%);
+        --orange-red_a20: hsla(19, 100%, 55%, 0.2);
+        --eerie-black: hsl(210, 11%, 15%);
+        --orange-red: hsl(19, 100%, 55%);
+        --davys-gray: hsl(0, 0%, 33%);
+        --white_a80: hsla(0, 0%, 100%, 0.8);
+        --white_a75: hsla(0, 0%, 100%, 0.75);
+        --white_a10: hsla(0, 0%, 100%, 0.1);
+        --jet_a10: hsla(0, 0%, 22%, 0.1);
+        --black: hsl(0, 0%, 0%);
+        --white: hsl(0, 0%, 100%);
+        --jet: hsl(0, 0%, 22%);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.test-item::-webkit-scrollbar {
+    height: 12px;
+}
+
+.test-item::-webkit-scrollbar-track {
+    border: 1px solid #6F3DF4;
+    border-radius: 50px;
+}
+
+.test-item::-webkit-scrollbar-thumb {
+    background-color: #6F3DF4;
+    border-radius: 50px;
+}
+
+.test-item::-webkit-scrollbar-button {
+    width: calc(25% - 20px);
+}
+
+@layer components {
+    .responsive {
+        @apply max-w-[500px] sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl m-auto w-full px-3;
+    }
+
+    .header {
+        @apply fixed z-20 w-full bg-max-yr10 py-5 transition-all;
+    }
+
+    .navbar {
+        @apply fixed left-0 w-screen bg-white py-10 lg:static lg:flex lg:h-0 lg:w-auto lg:translate-y-0 lg:py-0;
+    }
+
+    .ulist {
+        @apply flex flex-col items-center justify-between gap-5 font-medium lg:w-auto lg:flex-row lg:bg-transparent;
+    }
+
+    .links {
+        @apply uppercase border-0 py-2 px-10 lg:px-5 border-b-2 border-b-gray-400 lg:border-none tracking-widest text-lg text-jet w-full relative lg:after:absolute lg:after:h-[2px] lg:after:w-0 lg:after:bg-ored lg:after:left-0 lg:after:-bottom-1 lg:after:hover:w-full lg:after:origin-left transition-all duration-500 ease-in-out lg:after:hover:transition-all lg:after:hover:duration-500 lg:after:hover:ease-in-out hover:text-ored;
+    }
+
+    .btn1 {
+        @apply bg-ored font-medium uppercase text-white text-lg px-6 py-2 shadow-[5px_8px_1px_bg-jet] shadow-jet transition-all duration-300 hover:bg-jet hover:text-white hover:shadow-ored;
+    }
+
+    .skillcard {
+        @apply inline-flex items-center gap-5 bg-[#9cd3d1] px-6 py-3 border-2 border-davgray hover:shadow-[5px_5px_1px_bg-jet] hover:shadow-jet transition-all duration-300;
+    }
+
+    .testcar {
+        @apply lg:w-[49%] w-full shrink-0 flex flex-col sm:flex-row gap-5 snap-center sm:snap-start items-start py-5 px-2 sm:px-5 justify-center border-2 border-jet;
+    }
+
+}
+
+@media (max-width: 1020px) {
+    .navbar {
+        visibility: hidden;
+        transition: 0.25s ease;
+        transform: translateY(192px);
+        transform: scaleY(0);
+    }
+
+    .navbar.active {
+        visibility: visible;
+        transform: scaleY(1);
+        transform: translateY(192px);
+        transition: 0.25s ease;
+    }
+}
+
+.header.active {
+    background-color: white;
+    padding-block: 25px;
+
+}
